@@ -1,0 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #850fce, #e5e7eb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  transition: all 0.5s;
+}
+
+.container:hover {
+  border-radius: 0 50px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: bolder;
+}
+
+input {
+  width: 100%;
+  padding: 0.7rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: all 0.5s;
+}
+input:focus {
+  transform: scale(1.05);
+  border-radius: 25px;
+}
+
+button {
+  background: #850fce81;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #850fced1;
+  border-radius: 25px 0;
+  transform: scale(1.1);
+}
+button:active {
+  background: #850fce;
+  border-radius: 25px 0;
+  transform: scale(1.1);
+}
+
+.output {
+  height: 20px;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #111;
+  word-wrap: break-word;
+}
+
+.MDJAminDiv {
+  z-index: 4444;
+  position: fixed;
+  bottom: 5%;
+  left: 2%;
+}
+
+.MDJAmin {
+  text-decoration: none;
+  /* border-bottom: 1px dashed rgb(204, 204, 204); */
+  /* border-top: 1px dashed rgb(204, 204, 204); */
+  border-bottom: 1px dashed rgb(44, 44, 44);
+  border-top: 1px dashed rgb(44, 44, 44);
+  padding: 4px 0;
+  color: rgba(44, 44, 44, 0.525);
+  /* color: rgba(204, 204, 204, 0.414); */
+  font-family: monospace;
+  font-style: italic;
+  font-size: 1.1em;
+  transition: all 0.5s;
+}
+
+.MDJAmin:hover {
+  color: #000000;
+  /* color: white; */
+}

@@ -1,11 +1,18 @@
 "use strict";
-function capitalizeFirstLetterOfEachWord(str) {
-  return str
+
+const capitalizeFirstLetterOfEachWord = (str) =>
+  str
     .split(" ")
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
-}
 
-const sentence = prompt("Enter your word");
-const capitalizedSentence = capitalizeFirstLetterOfEachWord(sentence);
-console.log(capitalizedSentence);
+function capitalize() {
+  const input = document.getElementById("userInput").value.trim();
+  const outputDiv = document.getElementById("output");
+
+  if (input) {
+    outputDiv.textContent = capitalizeFirstLetterOfEachWord(input);
+  } else {
+    outputDiv.textContent = "Please enter some text!";
+  }
+}
